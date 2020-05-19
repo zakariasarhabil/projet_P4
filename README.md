@@ -147,30 +147,7 @@ Pour réalise nous projet en a divise la solution a 3 partie
 ## Les API à consommer
 
 
-AUTHENTIFICATION :
 
-### Api/account/logup
-
-Pour consommer API de registrement (journaliste ,redaction en chef , gestiooner ) il faut utiliser le lien:
-```sh
-Api/account/logup a Authorize Gestionner 
-```
-ainsi qu’envoyer les informations au body
-
-Nom(String), Prenom(String), Email(String),Tele(int), Statu(Bool),Role(‘journalistes’ ou ‘Gestionner’), Password(String), ConfirmPassword(String).
-
-
-
-### Api/Token
-
-•	Pour s’identifier il faut utiliser /token et envoyer au body :(Post)
-
-	"username=" + Le nom d’utilisateur + "& password d’utilisateur=" + password + "&grant_type=password” ;
-  
-•	Et envoyer au header une autorisation (Post)
-
-	var reqHeader = new HttpHeaders({ 'Content-Type': 
-	
 
 
 HOME:
@@ -196,86 +173,16 @@ Api/article/Articleslide
 Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste 
 
 
-### api/Article/DaysArticle
-
-Pour avoir liste des les Article order par 4 jours dans footer de  page Home  il faut utiliser le lien (get) 
-
-```sh
-
-api/Article/DaysArticle
-```
-
-Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste
-
-### api/ Article /DetaileArticle/id
-
-Pour avoir detaile d’Article il faut utiliser le lien (get)  avec id: 
-
-```sh
-api/ Article /DetaileArticle/id
-```
 
 
 
-Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste
-
-### api/Article/ToutArticles/id
-
-pour avoir tous les articles a touts les status(‘posted’ , ‘onposte’,’noposted’,’archiver’) 
-utiliser le lien get avec id (‘posted’ , ‘onposte’,’noposted’,’archiver’) :
-
-```sh
-api/articles/toutArticles
-```
 
 
-Int ID , date date , string Titre ,string body , string img , string video ,string  NomJournaliste
-
-### api/ Article /ArticleEnPost
-
-Pour poster un  Article il faut utiliser le lien (post)  : 
-```sh
-api/ Article /ArticleEnPost
-
-``` 
 
 
-### api/ Article / ArticleEnPut
-
-pour editer article utiliser le lien (put) :
-
-```sh
-
-api/article/articleEnPut
-```
-
-### api/ Article / commentEnPost
-
-pour poster un commentair utiliser li lien (post) :
-
-```sh
-
-api/article/commentEnPost
-```
 
 
-### api/ Article / comment
 
-pour geter un monnemtair utiliser le lien (get) :
-
-```sh
-api/article/comment/id
-```
-
-### api/ journalist / journalistSelect/id 
-
-Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien (get)  avec id:
-
-```sh
- api/ journalist /DetaileArticle/id
- ``` 
- ![API page]
-Int ID , string nom , string prenom ,string email , string tele, int nombrearticle , string img
 
 
 ### api/ journalist / listJournalist
@@ -288,12 +195,7 @@ Pour avoir detaile de journaliste et les article ecrite il faut utiliser le lien
  
 Int ID , string nom , string prenom ,string email , string tele, int nombrearticle , 
 
-### api/ journalist / journalisteEdite
 
-pour editer le statu de journaliste ou redaction en chef utiliser le lien(put) : 
-```sh
-api/journalist/ journalisteEdite
-```
 
 ### api/ RedactionEnChef / RedactionEnChef
 
@@ -312,12 +214,7 @@ Pour avoir liste des redaction en chef evec les article ecrit utiliser le lien (
 api/redactionEnChef/ redactionEnChefs
 ```
 
-### api/ RedactionEnChef / journalisteEdite
-pour editer le statu de journaliste ou redaction en chef utiliser le lien(put) : 
 
-```sh
-api/journalist/ journalisteEdite
-```
 
 
 

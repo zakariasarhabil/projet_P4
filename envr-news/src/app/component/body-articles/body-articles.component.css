@@ -1,0 +1,9 @@
+.card {
+    width: 150%;
+}
+
+.red {
+    margin-left: 440px;
+    color: #63e31a;
+    text-transform: uppercase;
+}

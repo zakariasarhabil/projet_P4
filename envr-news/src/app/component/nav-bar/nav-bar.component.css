@@ -1,0 +1,35 @@
+.image img {
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin-right: 100px;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+li a:hover:not(.active) {
+    color: #63e31a;
+    border-top: #63e31a solid 3px;
+}
+
+li a {
+    color: #919192;
+    /* background-color: #ddd; */
+}
+
+nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 3.5rem;
+}
+
+.fa-search {
+    margin-right: 100px;
+}

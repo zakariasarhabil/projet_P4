@@ -1,0 +1,94 @@
+<div class="main-content m-0">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card card-plain mb-0">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title mt-0"> Liste des Journalistes</h4>
+                        <p class="card-category"> Détail a propos des Journalistes dans le site web</p>
+                    </div>
+                    <div class="card-body ">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="">
+                                    <th>
+                                        Image
+                                    </th>
+                                    <th>
+                                        Nom
+                                    </th>
+                                    <th>
+                                        Prénom
+                                    </th>
+                                    <th>
+                                        Statut
+                                    </th>
+
+                                </thead>
+                                <tbody *ngFor="let journalist of journalistes ">
+                                    <tr>
+                                        <td>
+                                            <img class="shadow img-fluid img-size rounded-circle" src='{{journalist.Image}}' alt="journaliste">
+                                        </td>
+                                        <td>
+                                            {{journalist.Nom}}
+                                        </td>
+                                        <td>
+                                            {{journalist.Prenom}}
+                                        </td>
+                                        <td>
+                                            {{journalist.Statu}}
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <!-- <td>
+                                            <img class="shadow img-fluid rounded-circle img-size" src='{{journalist.Image}}' alt="jurica">
+                                        </td> -->
+
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Ajouter</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Start -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ajouter un Journaliste</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nom</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Prénom</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="custom-file mr-3">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Choisir
+                        l'image...</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->

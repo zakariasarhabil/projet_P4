@@ -1,0 +1,24 @@
+<h5 id="green">DERNIÈRE HEURE</h5>
+<hr />
+<div class="card mb-3 news" *ngFor="let card of cards">
+    <div class="row no-gutters ">
+        <div class="col-md-4 mt-4">
+            <img src="{{ card.Img }}" class="card-img " alt="... " />
+        </div>
+        <div class="col-md-8 ">
+            <div class="card-body ">
+                <h5 class="card-title ">{{ card.Titre }}</h5>
+                <p class="card-text ">{{ card.Body }}</p>
+                <p class="card-text ">
+                    <small class="text-muted ">Last updated 3 mins ago</small>
+
+                </p>
+                <div class="d-flex">
+                    <i class="fa fa-eye mr-2" aria-hidden="true"><span class="c-size">112</span></i>
+                    <i class="fa fa-comment" aria-hidden="true"><span class="c-size">06</span></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

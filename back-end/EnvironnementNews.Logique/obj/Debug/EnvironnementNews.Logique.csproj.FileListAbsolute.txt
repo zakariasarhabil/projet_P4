@@ -1,0 +1,6 @@
+C:\Users\Youcode\source\repos\EnvironnementNewsApi\EnvironnementNews.Logique\bin\Debug\EnvironnementNews.Logique.dll
+C:\Users\Youcode\source\repos\EnvironnementNewsApi\EnvironnementNews.Logique\bin\Debug\EnvironnementNews.Logique.pdb
+C:\Users\Youcode\source\repos\EnvironnementNewsApi\EnvironnementNews.Logique\obj\Debug\EnvironnementNews.Logique.csprojAssemblyReference.cache
+C:\Users\Youcode\source\repos\EnvironnementNewsApi\EnvironnementNews.Logique\obj\Debug\EnvironnementNews.Logique.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\source\repos\EnvironnementNewsApi\EnvironnementNews.Logique\obj\Debug\EnvironnementNews.Logique.dll
+C:\Users\Youcode\source\repos\EnvironnementNewsApi\EnvironnementNews.Logique\obj\Debug\EnvironnementNews.Logique.pdb
